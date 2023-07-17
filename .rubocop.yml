@@ -23,6 +23,13 @@ Layout/HashAlignment:
 Metrics/BlockLength:
   Enabled: false
 
+#################### Style ##################################
+
+# Reason: Classes mostly self-document with their names
+# https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation
+Style/Documentation:
+  Enabled: false
+
 #################### Rails ##################################
 
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsrakeenvironment
