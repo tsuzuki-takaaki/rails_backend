@@ -22,4 +22,7 @@ class Tweet < ApplicationRecord
 
   validates :title, presence: true
   validates :content, presence: true
+
+  scope :weekly, -> { where(created_at: Time.current.beginning_of_week..Time.current.end_of_week) }
+  scope :monthly, -> { where(created_at: Time.current.beginning_of_month..Time.current.end_of_month) }
 end
