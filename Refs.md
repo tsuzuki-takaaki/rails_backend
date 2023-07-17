@@ -11,5 +11,9 @@
 - https://railsguides.jp/association_basics.html
 - https://qiita.com/ryouzi/items/2682e7e8a86fd2b1ae47
 
+#### RSpec references
+- https://github.com/willnet/rspec-style-guide
+- https://techlife.cookpad.com/entry/2016/05/30/183947
+
 #### mastodon
 - https://github.com/mastodon/mastodon
