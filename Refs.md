@@ -14,10 +14,13 @@
 #### RSpec references
 - https://github.com/willnet/rspec-style-guide
 - https://techlife.cookpad.com/entry/2016/05/30/183947
+- request spec
+  - https://qiita.com/kagesumi3m/items/10244978273ffffa9b92
 
 #### simplecov
 - https://github.com/simplecov-ruby/simplecov
 - https://moneyforward-dev.jp/entry/2022/12/15/test-coverage-measurement/
 
-#### mastodon
+#### mastodon and other oss Rails applications
 - https://github.com/mastodon/mastodon
+- https://github.com/asyraffff/Open-Source-Ruby-and-Rails-Apps
