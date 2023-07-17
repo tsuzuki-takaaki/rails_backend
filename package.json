@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3"

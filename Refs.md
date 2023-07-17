@@ -31,6 +31,10 @@
 - https://github.com/simplecov-ruby/simplecov
 - https://moneyforward-dev.jp/entry/2022/12/15/test-coverage-measurement/
 
+#### package.json: engines
+- https://docs.npmjs.com/cli/v9/configuring-npm/package-json#engines
+- https://qiita.com/suin/items/994458418c737cc9c3e8
+
 #### mastodon and other oss Rails applications
 - https://github.com/mastodon/mastodon
 - https://github.com/asyraffff/Open-Source-Ruby-and-Rails-Apps
