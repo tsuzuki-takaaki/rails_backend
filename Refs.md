@@ -15,5 +15,9 @@
 - https://github.com/willnet/rspec-style-guide
 - https://techlife.cookpad.com/entry/2016/05/30/183947
 
+#### simplecov
+- https://github.com/simplecov-ruby/simplecov
+- https://moneyforward-dev.jp/entry/2022/12/15/test-coverage-measurement/
+
 #### mastodon
 - https://github.com/mastodon/mastodon
