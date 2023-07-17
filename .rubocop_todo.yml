@@ -13,13 +13,6 @@ RSpec/EmptyExampleGroup:
     - 'spec/models/user_spec.rb'
 
 # Offense count: 1
-# Configuration parameters: Include.
-# Include: app/models/**/*.rb
-Rails/HasManyOrHasOneDependent:
-  Exclude:
-    - 'app/models/user.rb'
-
-# Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: Include.
 # Include: **/Rakefile, **/*.rake
