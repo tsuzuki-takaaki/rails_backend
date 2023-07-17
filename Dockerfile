@@ -1,9 +1,11 @@
 FROM ruby:3.0
 
-RUN apt-get update
-RUN apt-get install -y \
-    build-essential \
+# https://endoflife.date/nodejs
+# https://github.com/nodesource/distributions
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
+RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
     nodejs \
+    build-essential \
     bash \
     postgresql-client \
     vim

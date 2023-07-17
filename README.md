@@ -1,4 +1,4 @@
 - Ruby: 3.0.6
 - Rails: 7.0.6
-- Node.js: v12.22.12(deprecated: https://endoflife.date/nodejs)
+- Node.js: v20.4.0
 - PostgreSQL: 15.2
