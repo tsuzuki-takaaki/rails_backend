@@ -1,22 +1,24 @@
 #!/bin/bash
-
 # awkコマンドは遅いかも: https://teramako.hatenadiary.org/entry/20070606/p1
-
-LOCAL_RUBY_VERSION=$(ruby -v 2>&1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
-LOCAL_BUNDLER_VERSION=$(bundler -v | awk '{print $3}')
-
-CONTAINER_RUBY_VERSION=$(cat .ruby-version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
-CONTAINER_BUNDLER_VERSION=$(tail -n1 "./Gemfile.lock" | awk '{print $1}')
 
 # rbenvがない場合はhomebrewでインストール
 if [ ! -d "${HOME}/.rbenv" ]; then
   brew install rbenv
 fi
 
-# rubyのバージョンが異なる場合はrbenvでinstallする
-if [ $LOCAL_RUBY_VERSION != $CONTAINER_RUBY_VERSION ]; then
+CONTAINER_RUBY_VERSION=$(cat .ruby-version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+
+# when local Ruby version is different from container Ruby version,
+# bundler command will return error like -> [rbenv: version `ruby-3.0.6' is not installed]
+# when local Ruby version is different from container Ruby version,
+# install container Ruby version with rbenv
+if ! ruby -v >/dev/null 2>&1; then
+  echo "Ruby version is different. Installing Ruby..."
   rbenv install $CONTAINER_RUBY_VERSION
 fi
+
+LOCAL_BUNDLER_VERSION=$(bundler -v | awk '{print $3}')
+CONTAINER_BUNDLER_VERSION=$(tail -n1 "./Gemfile.lock" | awk '{print $1}')
 
 # bundlerのバージョンが異なる場合はgemをインストールする
 if [ $LOCAL_BUNDLER_VERSION != $CONTAINER_BUNDLER_VERSION ]; then
@@ -24,4 +26,4 @@ if [ $LOCAL_BUNDLER_VERSION != $CONTAINER_BUNDLER_VERSION ]; then
 fi
 
 bundle install
-bundle exec rubocop -a --force-exclusion
+git diff --name-only HEAD | xargs bundle exec rubocop -a --force-exclusion
