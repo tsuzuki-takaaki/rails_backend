@@ -30,6 +30,11 @@ Metrics/BlockLength:
 Style/Documentation:
   Enabled: false
 
+# Reason: https://qiita.com/universato/items/1dd8943df07f2445655e
+# https://docs.rubocop.org/rubocop/cops_style.html#stylefrozenstringliteralcomment
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 #################### Rails ##################################
 
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsrakeenvironment
