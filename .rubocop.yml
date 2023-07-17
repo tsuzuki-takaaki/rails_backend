@@ -22,3 +22,8 @@ Layout/HashAlignment:
 # https://docs.rubocop.org/rubocop/cops_metrics.html#metricsblocklength
 Metrics/BlockLength:
   Enabled: false
+
+#################### RSpec ##################################
+
+RSpec/NamedSubject:
+  Enabled: false
