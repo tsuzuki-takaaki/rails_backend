@@ -13,14 +13,6 @@ RSpec/EmptyExampleGroup:
     - 'spec/models/user_spec.rb'
 
 # Offense count: 1
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: Include.
-# Include: **/Rakefile, **/*.rake
-Rails/RakeEnvironment:
-  Exclude:
-    - 'lib/tasks/auto_annotate_models.rake'
-
-# Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 Style/BlockComments:
   Exclude:

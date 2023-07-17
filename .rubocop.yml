@@ -23,6 +23,13 @@ Layout/HashAlignment:
 Metrics/BlockLength:
   Enabled: false
 
+#################### Rails ##################################
+
+# https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsrakeenvironment
+# https://github.com/thisisdash/rubocopital/issues/10
+Rails/RakeEnvironment:
+  Enabled: false
+
 #################### RSpec ##################################
 
 RSpec/NamedSubject:
