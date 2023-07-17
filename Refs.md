@@ -16,6 +16,10 @@
 - https://techlife.cookpad.com/entry/2016/05/30/183947
 - request spec
   - https://qiita.com/kagesumi3m/items/10244978273ffffa9b92
+- faker
+  - https://github.com/faker-ruby/faker
+- factory_bot
+  - association: https://github.com/thoughtbot/factory_bot/blob/main/GETTING_STARTED.md#associations
 
 #### simplecov
 - https://github.com/simplecov-ruby/simplecov
