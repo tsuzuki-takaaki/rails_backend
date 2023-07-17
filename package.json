@@ -10,6 +10,6 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*": "echo hello"
+    "*.{rb, rake}": "bin/local_rubocop"
   }
 }
