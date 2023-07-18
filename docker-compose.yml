@@ -13,6 +13,8 @@ services:
     volumes:
       - .:/app
       - gem_data:/usr/local/bundle
+    environment:
+      - DATABASE_HOST=db
     ports:
       - "3000:3000"
     depends_on:
