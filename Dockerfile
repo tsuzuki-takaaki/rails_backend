@@ -1,4 +1,4 @@
-FROM ruby:3.0
+FROM ruby:3.2
 
 # https://endoflife.date/nodejs
 # https://github.com/nodesource/distributions
